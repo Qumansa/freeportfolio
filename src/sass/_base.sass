@@ -4,8 +4,8 @@ html, body
 html
     box-sizing: border-box
     font-family: 'Gilroy', sans-serif
-    font-size: 16px
-    line-height: 24px
+    font-size: 18px
+    line-height: 22px
     font-weight: 500
     color: $black
 
@@ -67,10 +67,6 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button
     display: none
 
-.container
-    margin: 0 auto
-    max-width: 1280px
-
 .sr-only
     position: absolute
     margin: -1px
@@ -82,5 +78,17 @@ input[type="number"]::-webkit-inner-spin-button
     border: 0
     clip: rect(0 0 0 0)
     clip-path: inset(50%)
+
+.container
+    margin: 0 auto
+    padding: 0 15px
+    max-width: 940px
+
+.section
+    padding: 110px 0
+    &__title
+        font-size: 34px
+        line-height: 42px
+        text-align: center
 
 @import 'media/_base-media'
