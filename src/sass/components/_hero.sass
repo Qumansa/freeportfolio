@@ -1,0 +1,39 @@
+.hero
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__title
+        font-size: 47px
+        line-height: 59px
+        font-weight: 700
+    &__langs
+        display: flex
+        transform: rotate(-90deg) translate(25px, 20px)
+        // transform: rotate(-90deg) translate(50%, 50%)
+        column-gap: 13px
+        &-item
+            position: relative
+            &:not(:first-child)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 5px
+                    left: -7px
+                    width: 3px
+                    height: 15px
+                    background-color: $black
+        &-button
+            font-family: inherit
+            font-size: 16px
+            line-height: 20px
+            font-weight: 700
+            color: $gray
+            @include hoverLink
+            &_active
+                color: $black
+    &__img
+        margin-top: 30px
+        width: 100%
+        max-height: 397px
+        object-fit: cover

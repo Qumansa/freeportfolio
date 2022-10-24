@@ -98,7 +98,7 @@ gulp.task('html', () => {
 gulp.task('img', () => {
 	return gulp
 		.src('src/img/**')
-		.pipe(webp({ quality: 70 }))
+		.pipe(webp({ quality: 100 }))
 		.pipe(gulp.dest('./dist/img'))
 		.on('end', browserSync.reload);
 });

@@ -1,7 +1,7 @@
-@mixin hoverUnderline
-    transition: text-decoration 0.1s
+@mixin hoverLink
+    transition: color 0.15s
     @media (min-width: 992px)
         &:hover
-            text-decoration: underline
+            color: $black
         &:active
-            opacity: 0.5
+            opacity: 0.7

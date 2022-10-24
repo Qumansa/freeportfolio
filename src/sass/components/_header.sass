@@ -1,5 +1,5 @@
 .header
-    &__container
+    &__nav
         padding: 30px 0
         border-bottom: 1px solid $gray
     &__list
@@ -9,11 +9,8 @@
     &__link
         font-weight: 700
         color: $gray
-        transition: color 0.15s
+        @include hoverLink
         &_active
             color: $black
-        @media (min-width: 992px)
-            &:hover
-                color: $black
 
 @import '../media/_header-media'
