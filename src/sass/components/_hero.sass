@@ -4,13 +4,15 @@
         justify-content: space-between
         align-items: flex-end
     &__caption
-        font-size: 47px
-        line-height: 59px
+        font-size: 4.7rem
+        line-height: 5.9rem
         font-weight: 700
+    &__descr
+        @include baseFontSize
     &__langs
         display: flex
         transform: rotate(-90deg) translate(25px, 20px)
-        column-gap: 13px
+        column-gap: 1.3rem
         &-item
             position: relative
             &:not(:first-child)
@@ -24,8 +26,8 @@
                     background-color: $black
         &-button
             font-family: inherit
-            font-size: 16px
-            line-height: 20px
+            font-size: 1.6rem
+            line-height: 2.0rem
             font-weight: 700
             color: $gray
             @include hoverLink
