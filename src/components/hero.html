@@ -13,16 +13,10 @@
                     <br>
                     24 years old, Minsk
                 </p>
-                <ul class="hero__langs">
-                    <li class="hero__langs-item">
-                        <button class="hero__langs-button">RU</button>
-                    </li>
-                    <li class="hero__langs-item">
-                        <button class="hero__langs-button hero__langs-button_active">ENG</button>
-                    </li>
-                </ul>
+                @@include('./langs.html')
             </div>
-            <img class="hero__img" src="img/hero.webp" alt="Denis Novik">
+            <img class="hero__img" srcset="img/hero-575.webp 317w, img/hero.webp 945w"
+                sizes="(max-width: 575px) 317px, (min-width: 576px) 945px" src="img/hero.webp" alt="Denis Novik">
         </figure>
     </div>
 </section>

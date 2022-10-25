@@ -1,14 +1,15 @@
 .skills
     &__text
         display: block
-        margin-top: 7.0rem
+        margin-top: 7rem
         text-align: center
         @include baseFontSize
     &__list
-        display: flex
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
         justify-content: space-between
         align-items: center
-        column-gap: 3.0rem
+        gap: 3rem
         margin-top: 8.5rem
     &__img
         max-width: 90px
@@ -29,4 +30,6 @@
     &__rating
         display: flex
         column-gap: 0.5rem
-        margin-top: 4.0rem
+        margin-top: 4rem
+
+@import '../media/_skills-media'

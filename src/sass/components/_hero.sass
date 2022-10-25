@@ -9,32 +9,10 @@
         font-weight: 700
     &__descr
         @include baseFontSize
-    &__langs
-        display: flex
-        transform: rotate(-90deg) translate(25px, 20px)
-        column-gap: 1.3rem
-        &-item
-            position: relative
-            &:not(:first-child)
-                &::before
-                    content: ''
-                    position: absolute
-                    top: 5px
-                    left: -7px
-                    width: 3px
-                    height: 15px
-                    background-color: $black
-        &-button
-            font-family: inherit
-            font-size: 1.6rem
-            line-height: 2.0rem
-            font-weight: 700
-            color: $gray
-            @include hoverLink
-            &_active
-                color: $black
     &__img
-        margin-top: 30px
+        margin-top: 3.5rem
         width: 100%
         max-height: 397px
         object-fit: cover
+
+@import '../media/_hero-media'
