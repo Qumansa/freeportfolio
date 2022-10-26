@@ -1,0 +1,19 @@
+@media (max-width: 575px)
+    .langs
+        position: absolute
+        right: 0
+        bottom: 0
+        column-gap: 2rem
+        transform: rotate(90deg) translate(-9rem, -3rem)
+        &__item
+            &:not(:first-child)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 8px
+                    left: -12px
+                    width: 3px
+                    height: 30px
+                    background-color: $black
+        &__button
+            @include largeFontSize

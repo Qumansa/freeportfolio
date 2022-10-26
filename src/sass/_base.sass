@@ -78,19 +78,18 @@ input[type="number"]::-webkit-inner-spin-button
     clip: rect(0 0 0 0)
     clip-path: inset(50%)
 
-.container
-    margin: 0 auto
-    padding: 0 1.5rem
-    max-width: 970px
-
 .section
     padding: 10rem 0
     &-first
         padding: 4rem 0 10rem
     &__title
-        font-size: 3.4rem
-        line-height: 4.2rem
+        @include largeFontSize
         font-weight: 700
         text-align: center
+
+.container
+    margin: 0 auto
+    padding: 0 1.5rem
+    max-width: 970px
 
 @import 'media/_base-media'
