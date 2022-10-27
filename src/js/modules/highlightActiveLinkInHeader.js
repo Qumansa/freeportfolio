@@ -1,21 +1,16 @@
 export const highlightActiveLinkInHeader = () => {
 	const sections = document.querySelectorAll('[data-section]');
-	const links = document.querySelectorAll('.header__link');
-	const linkActiveClass = 'header__link_active';
 
 	const observer = new IntersectionObserver(
 		(entries) => {
 			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					links.forEach((link) => link.classList.remove(linkActiveClass));
+				const activeLink = document.querySelector(`.header__link[href="#${entry.target.id}"]`);
 
-					const activeLink = document.querySelector(`.header__link[href="#${entry.target.id}"]`);
-					activeLink.classList.add(linkActiveClass);
-				}
+				activeLink.classList.toggle('header__link_active', entry.isIntersecting);
 			});
 		},
 		{
-			threshold: 0.3,
+			rootMargin: '-48%',
 		}
 	);
 

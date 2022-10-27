@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 import { initVh } from './modules/initVh';
 import { toggleBurger } from './modules/toggleBurger';
 import { initAnimations } from './modules/initAnimations';
