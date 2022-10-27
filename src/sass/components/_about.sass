@@ -1,4 +1,9 @@
+@import '../_animations'
+
 .about
+    // opacity: 0
+    &[data-animation="activated"]
+        animation: fadeInFromLeft 1s forwards
     &__text
         text-align: center
         @include baseFontSize

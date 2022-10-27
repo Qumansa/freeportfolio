@@ -1,4 +1,9 @@
+@import '../_animations'
+
 .skills
+    // opacity: 0
+    &[data-animation="activated"]
+        animation: fadeInFromLeft 1s forwards
     &__text
         display: block
         margin-top: 7rem

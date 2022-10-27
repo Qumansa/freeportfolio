@@ -12,4 +12,12 @@ export const toggleBurger = () => {
 			? (document.body.style.overflow = 'hidden')
 			: (document.body.style.overflow = '');
 	});
+
+	menu.addEventListener('click', (e) => {
+		if (e.target.classList.contains('header__link') && menu.classList.contains(menuActiveClass)) {
+			menu.classList.remove(menuActiveClass);
+			burger.classList.remove(burgerActiveClass);
+			document.body.style.overflow = '';
+		}
+	});
 };
