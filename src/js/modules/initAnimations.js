@@ -11,7 +11,7 @@ export const initAnimations = () => {
 			});
 		},
 		{
-			threshold: 0.32,
+			rootMargin: '-11%',
 		}
 	);
 

@@ -7,6 +7,6 @@ import { highlightActiveLinkInHeader } from './modules/highlightActiveLinkInHead
 document.addEventListener('DOMContentLoaded', () => {
 	initVh();
 	toggleBurger();
-	// initAnimations();
+	initAnimations();
 	highlightActiveLinkInHeader();
 });

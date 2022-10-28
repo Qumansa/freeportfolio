@@ -1,19 +1,28 @@
 .hero
     padding-top: 12.3rem
-    &__wrapper
-        display: flex
-        justify-content: space-between
-        align-items: flex-end
     &__caption
         font-size: 4.7rem
         line-height: 5.9rem
         font-weight: 700
+        opacity: 0
+        &[data-animation="activated"]
+            animation: fadeInDown 0.75s forwards
     &__descr
+        opacity: 0
+        &[data-animation="activated"]
+            animation: fadeInDown 0.75s 0.05s forwards
         @include baseFontSize
     &__img
         margin-top: 3.5rem
         width: 100%
         max-height: 397px
         object-fit: cover
+        opacity: 0
+        &[data-animation="activated"]
+            animation: fadeInDown 0.75s 0.15s forwards
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
 
 @import '../media/_hero-media'

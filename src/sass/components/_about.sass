@@ -1,15 +1,17 @@
-@import '../_animations'
-
 .about
-    // opacity: 0
-    &[data-animation="activated"]
-        animation: fadeInFromLeft 1s forwards
     &__text
         text-align: center
+        opacity: 0
         @include baseFontSize
         &:first-of-type
             margin-top: 2rem
         &:not(:first-of-type)
             margin-top: 5rem
+        &:nth-of-type(odd)
+            &[data-animation="activated"]
+                animation: fadeInLeft 1s forwards
+        &:nth-of-type(even)
+            &[data-animation="activated"]
+                animation: fadeInRight 1s forwards
 
 @import '../media/_about-media'

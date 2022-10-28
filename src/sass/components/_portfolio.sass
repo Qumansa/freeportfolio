@@ -1,14 +1,16 @@
-@import '../_animations'
-
 .portfolio
-    // opacity: 0
-    &[data-animation="activated"]
-        animation: fadeInFromLeft 1s forwards
     &__list
         margin-top: 4.5rem
     &__item
+        opacity: 0
         &:not(:first-child)
             margin-top: 10rem
+        &:nth-child(odd)
+            &[data-animation="activated"]
+                animation: fadeInLeft 1.25s forwards
+        &:nth-child(even)
+            &[data-animation="activated"]
+                animation: fadeInRight 1.25s forwards
     &__img
         width: 100%
         max-height: 525px

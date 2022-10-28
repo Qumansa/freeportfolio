@@ -1,7 +1,9 @@
 .langs
     display: flex
-    transform: rotate(-90deg) translate(2.5rem, 2rem)
     column-gap: 1.3rem
+    opacity: 0
+    &[data-animation="activated"]
+        animation: fadeInDownLangs 0.75s 0.1s forwards
     &__item
         position: relative
         &:not(:first-child)

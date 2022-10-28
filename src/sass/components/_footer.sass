@@ -13,6 +13,8 @@
         border: 1px solid $black
         @include baseFontSize
         @include hoverButton
+        &[data-animation="activated"]
+            animation: pulse 5s 1s infinite forwards
     &__list
         display: flex
         justify-content: center

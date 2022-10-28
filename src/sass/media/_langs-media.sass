@@ -4,7 +4,10 @@
         right: 0
         bottom: 0
         column-gap: 2rem
+        opacity: 1
         transform: rotate(90deg) translate(-9rem, -3rem)
+        &[data-animation="activated"]
+            animation: none
         &__item
             &:not(:first-child)
                 &::before
