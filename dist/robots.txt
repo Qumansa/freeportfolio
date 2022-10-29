@@ -1,2 +1,3 @@
 User-Agent: *
 Allow: /
+Sitemap: http://g90418lt.beget.tech/sitemap.xml

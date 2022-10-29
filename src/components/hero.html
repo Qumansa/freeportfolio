@@ -1,23 +1,22 @@
 <section class="hero section-first" id="home" data-section>
     <div class="container">
         <h2 class="sr-only">Common information</h2>
-        <figure>
-            <div class="hero__wrapper">
-                <figcaption class="hero__caption" data-animation="initial">
-                    Denis
-                    <br>
-                    Novik
-                </figcaption>
-                <p class="hero__descr" data-animation="initial">
-                    UX | UI designer
-                    <br>
-                    24 years old, Minsk
-                </p>
-                @@include('./langs.html')
-            </div>
-            <img class="hero__img" srcset="img/hero-575.webp 317w, img/hero.webp 945w"
-                sizes="(max-width: 575px) 317px, (min-width: 576px) 945px" src="img/hero.webp" alt="Denis Novik"
-                data-animation="initial">
-        </figure>
+        <div class="hero__wrapper">
+            <span class="hero__caption" data-animation="initial">
+                Denis
+                <br>
+                Novik
+            </span>
+            <span class="hero__descr" data-animation="initial">
+                UX | UI designer
+                <br>
+                24 years old, Minsk
+            </span>
+            @@include('./langs.html')
+        </div>
+        <picture>
+            <source srcset="img/hero-575.webp" media="(max-width: 575px)">
+            <img class="hero__img" src="img/hero.webp" alt="Denis Novik" data-animation="initial">
+        </picture>
     </div>
 </section>
